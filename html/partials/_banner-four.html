@@ -1,0 +1,43 @@
+<section class="banner-four">
+    <div class="banner-four__thumb">
+        <img src="assets/images/thumbs/banner-four-image.png" alt="">
+    </div>
+    <img src="assets/images/shapes/pyramid-shape.png" alt="Shape" class="banner-four-shape one">
+    <img src="assets/images/shapes/angle-left.png" alt="Shape" class="banner-four-shape two">
+    <img src="assets/images/shapes/angle-right.png" alt="Shape" class="banner-four-shape three">
+    <div class="banner-four__inner">
+        <div class="container">
+            <div class="banner-four-content">
+                <span class="banner-four-content__subtitle">FinTech Fusion</span>
+                <h1 class="banner-four-content__title">Invest today in You <span class="text-gradient">Dream Home</span> </h1>
+
+                <div class="banner-four-content__tab">
+
+                    <ul class="common-tab style-outline nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-rent-tab" data-bs-toggle="pill" data-bs-target="#pills-rent" type="button" role="tab" aria-controls="pills-rent" aria-selected="true"> <span class="text">Rent</span> </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-buy-tab" data-bs-toggle="pill" data-bs-target="#pills-buy" type="button" role="tab" aria-controls="pills-buy" aria-selected="false"> <span class="text">Buy</span> </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-sell-tab" data-bs-toggle="pill" data-bs-target="#pills-sell" type="button" role="tab" aria-controls="pills-sell" aria-selected="false"> <span class="text">Sell</span> </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-rent" role="tabpanel" aria-labelledby="pills-rent-tab" tabindex="0">
+                            @@include('../partials/_search-keyword.html')
+                        </div>
+                        <div class="tab-pane fade" id="pills-buy" role="tabpanel" aria-labelledby="pills-buy-tab" tabindex="0">
+                            @@include('../partials/_search-keyword.html')
+                        </div>
+                        <div class="tab-pane fade" id="pills-sell" role="tabpanel" aria-labelledby="pills-sell-tab" tabindex="0">
+                            @@include('../partials/_search-keyword.html')
+                        </div>
+                    </div>  
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>

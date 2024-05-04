@@ -1,0 +1,105 @@
+<!-- ==================================== Floor Plan Section Start ========================== -->
+<section class="floor-plan padding-y-60">
+    <div class="container container-two">
+        <div class="section-heading">
+            <span class="section-heading__subtitle bg-transparent"> <span class="text-gradient fw-semibold">Floor plan </span> </span>
+            <h2 class="section-heading__title">Unlocking the door to your a the new home</h2>
+        </div>
+        <div class="row gy-4 align-items-center">
+            <div class="col-lg-6">
+                <div class="floor-plan__thumb">
+                    <img src="assets/images/thumbs/floor-plan.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="floor-plan__content">
+                    <div class="flx-align gap-4">
+                        <h6 class="text fw-normal mb-0 floor-plan__title">Select Floor</h6>
+
+                        <ul class="common-tab style-two nav nav-pills mb-0" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="pills-one-tab" data-bs-toggle="pill" data-bs-target="#pills-one" type="button" role="tab" aria-controls="pills-one" aria-selected="true"> <span class="text">1</span> </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-two-tab" data-bs-toggle="pill" data-bs-target="#pills-two" type="button" role="tab" aria-controls="pills-two" aria-selected="false"> <span class="text">2</span> </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-three-tab" data-bs-toggle="pill" data-bs-target="#pills-three" type="button" role="tab" aria-controls="pills-three" aria-selected="false"> <span class="text">3</span> </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-four-tab" data-bs-toggle="pill" data-bs-target="#pills-four" type="button" role="tab" aria-controls="pills-four" aria-selected="false"> <span class="text">4</span> </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-five-tab" data-bs-toggle="pill" data-bs-target="#pills-five" type="button" role="tab" aria-controls="pills-five" aria-selected="false"> <span class="text">5</span> </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-six-tab" data-bs-toggle="pill" data-bs-target="#pills-six" type="button" role="tab" aria-controls="pills-six" aria-selected="false">6</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-one" role="tabpanel" aria-labelledby="pills-one-tab" tabindex="0">
+                            @@include('../partials/_floor-plan-list.html', { 
+                                'room': '04',
+                                'bathroom': '04',
+                                'ara': '13,002',
+                                'parking': '05',
+                                'total': '$2306.2'
+                            })
+                        </div>
+                        <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-two-tab" tabindex="0">
+                            @@include('../partials/_floor-plan-list.html', { 
+                                'room': '06',
+                                'bathroom': '06',
+                                'ara': '15,000',
+                                'parking': '07',
+                                'total': '$2504.8'
+                            })
+                        </div>
+                        <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-three-tab" tabindex="0">
+                            @@include('../partials/_floor-plan-list.html', { 
+                                'room': '03',
+                                'bathroom': '03',
+                                'ara': '11,000',
+                                'parking': '03',
+                                'total': '$1323.1'
+                            })
+                        </div>
+                        <div class="tab-pane fade" id="pills-four" role="tabpanel" aria-labelledby="pills-four-tab" tabindex="0">
+                            @@include('../partials/_floor-plan-list.html', { 
+                                'room': '06',
+                                'bathroom': '06',
+                                'ara': '15,000',
+                                'parking': '07',
+                                'total': '$2504.8'
+                            })
+                        </div>
+                        <div class="tab-pane fade" id="pills-five" role="tabpanel" aria-labelledby="pills-five-tab" tabindex="0">
+                            @@include('../partials/_floor-plan-list.html', { 
+                                'room': '05',
+                                'bathroom': '05',
+                                'ara': '16,000',
+                                'parking': '05',
+                                'total': '$1723.1'
+                            })
+                        </div>
+                        <div class="tab-pane fade" id="pills-six" role="tabpanel" aria-labelledby="pills-six-tab" tabindex="0">
+                            @@include('../partials/_floor-plan-list.html', { 
+                                'room': '08',
+                                'bathroom': '08',
+                                'ara': '32,000',
+                                'parking': '10',
+                                'total': '$5453.1'
+                            })
+                        </div>
+                    </div>
+
+                    <p class="floor-plan__desc font-18 fw-light">*Real estate is a lucrative industry that involves the buying selling and renting of properties. It encompasses</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==================================== Floor Plan Section End ========================== -->

@@ -1,0 +1,30 @@
+@@include('../partials/_template-top.html')
+
+<main class="dark-background">   
+    @@include('../partials/_common-header.html', {
+        'headerClass': "dark-header",
+        'logoName': 'white-logo',
+        'isRightSide': "menu-right",
+        'btnClass': '-outline',
+        'btnOutlineDark': 'btn-outline-main-dark',
+        'btnText': 'Add Listing'
+    })
+
+    @@include('../partials/_banner-two.html')
+    @@include('../partials/_service.html')
+    @@include('../partials/_about-two.html')
+    @@include('../partials/_floor-plan.html')
+    @@include('../partials/_gallery.html', {
+        'sectionClass': 'padding-y-60'
+    })
+    @@include('../partials/_counter-two.html')
+    @@include('../partials/_apartment.html')
+    @@include('../partials/_message-two.html')
+    @@include('../partials/_blog-two.html')
+    
+    @@include('../partials/_footer.html', {
+        'bgDarkClass': 'section-bg-dark'
+    })
+</main>
+
+@@include('../partials/_template-bottom.html')

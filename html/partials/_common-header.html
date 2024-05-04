@@ -1,0 +1,34 @@
+<!-- ==================== Header Start Here ==================== -->
+<header class="header @@headerClass">
+    <div class="container container-two">
+        <nav class="header-inner flx-between">
+            <!-- Logo Start -->
+            <div class="logo">
+                <a href="index.html" class="link">
+                    <img src="assets/images/logo/@@logoName.png" alt="Logo">
+                </a>
+            </div>
+            <!-- Logo End -->
+
+            <!-- Menu Start  -->
+            <div class="header-menu d-lg-block d-none @@isRightSide">
+                @@include('../partials/_nav-menu.html', {
+                    "class" : ""
+                })
+            </div>
+            <!-- Menu End  -->
+
+            <!-- Header Right start -->
+            <div class="header-right flx-align">
+                <a href="property-details.html" class="btn btn@@btnClass-main @@btnOutlineDark d-lg-block d-none"> @@btnText 
+                    <span class="icon-right icon"> 
+                        <i class="fas fa-arrow-right"></i> 
+                    </span>
+                 </a>
+                <button type="button" class="toggle-mobileMenu d-lg-none ms-3"> <i class="las la-bars"></i> </button>
+            </div>
+            <!-- Header Right End  -->
+        </nav>
+    </div>
+</header>
+<!-- ==================== Header End Here ==================== -->

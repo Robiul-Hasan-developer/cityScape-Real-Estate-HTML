@@ -1,0 +1,26 @@
+@@include('../partials/_template-top.html')
+
+<main class="body-bg">
+    @@include('../partials/_common-header.html', {
+        'headerClass': "dark-header has-border",
+        'logoName': 'white-logo',
+        'isRightSide': "",
+        'btnClass': '-outline',
+        'btnOutlineDark': 'btn-outline-main-dark',
+        'btnText': 'Add Listing'
+    })
+    
+    @@include('../partials/_breadcrumb.html', {
+        'breadcrumbText': 'Register'
+    })
+    
+    @@include('../partials/_register.html')
+    
+    @@include('../partials/_cta.html')
+    
+    @@include('../partials/_footer.html', {
+        'bgDarkClass': ''
+    })
+</main>
+
+@@include('../partials/_template-bottom.html')

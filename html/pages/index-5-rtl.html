@@ -1,0 +1,69 @@
+@@include('../partials/_template-top-rtl.html')
+
+<main class="body-bg">
+    @@include('../partials/_header-top-three.html')
+    
+    @@include('../partials/_header-two.html', {
+        'headerClass': "bg-gray-100",
+        'logoName': 'logo',
+        'isRightSide': "",
+        'btnClass': '',
+        'btnOutlineDark': '',
+        'btnText': 'Add Listing'
+    })
+
+    @@include('../partials/_banner-five.html')
+    @@include('../partials/_about-five.html')
+    @@include('../partials/_service-slider.html')
+    @@include('../partials/_property-type-five.html')
+    @@include('../partials/_choose-us.html')
+    @@include('../partials/_property-five.html')
+    @@include('../partials/_gallery.html', {
+        'sectionClass': 'padding-y-120 bg-white'
+    })
+    @@include('../partials/_counter-six.html')
+    
+    <!-- ==================== Blog Start Here ==================== -->
+    <section class="blog padding-y-120">
+        <div class="container container-two">
+
+            <div class="section-heading">
+                <div class="section-heading__inner">
+                    <span class="section-heading__subtitle bg-white"> 
+                        <span class="text-gradient fw-semibold ">Latest blog and news</span>
+                    </span>
+                    <h2 class="section-heading__title">Discover Endless Possibilities in Real Estate</h2>
+                </div>
+            </div>
+
+            <div class="row gy-4">
+
+                @@include('../partials/_blog-five-item.html', {
+                    'title': 'Discover Endless Possibilities in Real Estate Live', 
+                    'date': '04 Feb', 
+                    'imgPath': '1'
+                })
+                @@include('../partials/_blog-five-item.html', {
+                    'title': 'Turn Your Real Estate Dreams Into Reality', 
+                    'date': '08 Feb', 
+                    'imgPath': '2'
+                })
+                @@include('../partials/_blog-five-item.html', {
+                    'title': 'Invest in Your Future with Real main Estate', 
+                    'date': '12 Feb', 
+                    'imgPath': '3'
+                })
+
+            </div>
+        </div>
+    </section>
+    <!-- ==================== Blog End Here ==================== -->
+    
+    @@include('../partials/_footer-three.html', {
+        'bgDarkClass': ''
+    })
+</main>
+
+@@include('../partials/_template-bottom.html')
+
+

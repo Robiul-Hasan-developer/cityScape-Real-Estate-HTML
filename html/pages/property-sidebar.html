@@ -1,0 +1,115 @@
+@@include('../partials/_template-top.html')
+
+
+<main class="body-bg">
+    @@include('../partials/_common-header.html', {
+        'headerClass': "dark-header has-border",
+        'logoName': 'white-logo',
+        'isRightSide': "",
+        'btnClass': '-outline',
+        'btnOutlineDark': 'btn-outline-main-dark',
+        'btnText': 'Add Listing'
+    })
+    
+    @@include('../partials/_breadcrumb.html', {
+        'breadcrumbText': 'Property With Sidebar'
+    })
+    
+    <!-- ======================== Property Section Start ============================ -->
+    <section class="property bg-gray-100 padding-y-120">
+        <div class="container container-two">
+            @@include('../partials/_property-filter.html')
+            <div class="row gy-4">
+                <div class="col-lg-8">
+                    <div class="list-grid-item-wrapper row gy-4">
+                        @@include('../partials/_property-item-two.html', {
+                            'colClass': 'col-sm-6',
+                            'path' : '7',
+                            'title' : 'Turning Dreams into Addresses Home State',
+                            'price' : '$456.00',
+                        })
+                        @@include('../partials/_property-item-two.html', {
+                            'colClass': 'col-sm-6',
+                            'path' : '8',
+                            'title' : 'Your journey homeownership starts here  too',
+                            'price' : '$300.00',
+                        })
+                        @@include('../partials/_property-item-two.html', {
+                            'colClass': 'col-sm-6',
+                            'path' : '9',
+                            'title' : 'Brick by Brick Your Dream Home Awaits',
+                            'price' : '$380.00',
+                        })
+                        @@include('../partials/_property-item-two.html', {
+                            'colClass': 'col-sm-6',
+                            'path' : '10',
+                            'title' : 'Opening Doors to Your Dreams For Living',
+                            'price' : '$190.00',
+                        })
+                        @@include('../partials/_property-item-two.html', {
+                            'colClass': 'col-sm-6',
+                            'path' : '11',
+                            'title' : 'Home is Where Your Story Begins',
+                            'price' : '$480.00',
+                        })
+                        @@include('../partials/_property-item-two.html', {
+                            'colClass': 'col-sm-6',
+                            'path' : '12',
+                            'title' : 'Building Trust, One Home at a Time',
+                            'price' : '$520.00',
+                        })
+                        @@include('../partials/_property-item-two.html', {
+                            'colClass': 'col-sm-6',
+                            'path' : '13',
+                            'title' : 'Guiding You Home with Experience',
+                            'price' : '$350.00',
+                        })
+                        @@include('../partials/_property-item-two.html', {
+                            'colClass': 'col-sm-6',
+                            'path' : '14',
+                            'title' : 'A Tradition of Trust in Real Estate',
+                            'price' : '$530.00',
+                        })
+                        @@include('../partials/_property-item-two.html', {
+                            'colClass': 'col-sm-6',
+                            'path' : '15',
+                            'title' : 'Target Audience and Reflect the Values',
+                            'price' : '$560.00',
+                        })
+                        @@include('../partials/_property-item-two.html', {
+                            'colClass': 'col-sm-6',
+                            'path' : '16',
+                            'title' : 'Making House Hunting an Adventure',
+                            'price' : '$500.00',
+                        })
+                        @@include('../partials/_property-item-two.html', {
+                            'colClass': 'col-sm-6',
+                            'path' : '17',
+                            'title' : 'Opening New Doors to Your Future',
+                            'price' : '$580.00',
+                        })
+                        @@include('../partials/_property-item-two.html', {
+                            'colClass': 'col-sm-6',
+                            'path' : '18',
+                            'title' : 'Your Journey to Home Starts Here',
+                            'price' : '$563.00',
+                        })
+                    </div>
+                </div>
+                <div class="col-lg-4 ps-lg-5">
+                    @@include('../partials/_search-sidebar.html') 
+                </div>
+            </div>
+            @@include('../partials/_pagination.html') 
+        </div>
+    </section>
+    <!-- ======================== Property Section End ============================ -->
+    
+    @@include('../partials/_cta.html')
+    
+    @@include('../partials/_footer.html', {
+        'bgDarkClass': ''
+    })
+</main>
+
+@@include('../partials/_template-bottom.html')

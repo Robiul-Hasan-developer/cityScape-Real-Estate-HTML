@@ -1,0 +1,124 @@
+@@include('../partials/_template-top.html')
+
+<main class="body-bg">
+    @@include('../partials/_header-top-two.html')
+    
+    @@include('../partials/_common-header.html', {
+        'headerClass': "bg-white",
+        'logoName': 'logo',
+        'isRightSide': "",
+        'btnClass': '',
+        'btnOutlineDark': '',
+        'btnText': 'Add Listing'
+    })
+
+    @@include('../partials/_banner-four.html')
+    @@include('../partials/_about-four.html')
+    @@include('../partials/_latest-properties-four.html')
+
+    @@include('../partials/_property-four.html')
+    @@include('../partials/_counter-five.html', {
+        'classes': 'padding-t-60 padding-b-120'
+    })
+    @@include('../partials/_project.html')
+    @@include('../partials/_testimonial-four.html')
+    @@include('../partials/_working-process.html')
+    
+    <!-- ========================= Team Section Start ============================= -->
+    <section class="team padding-t-60 padding-b-120">
+        <div class="container container-two">
+            <div class="section-heading style-left style-flex flx-between align-items-end gap-3">
+                <div class="section-heading__inner">
+                    <span class="section-heading__subtitle"> <span class="text-gradient fw-semibold">OuR Professionals</span> </span>
+                    <h2 class="section-heading__title">Investment and Growth through Real Estate</h2>
+                </div>
+                <a href="#" class="btn btn-main">Learn More <span class="icon-right"> <i class="fas fa-plus"></i> </span> </a>
+            </div>
+            <div class="row gy-4">
+                @@include('../partials/_team-item.html', {
+                    'imgPath': '1', 
+                    'name': 'Annette Black', 
+                    'designation': 'President of Sales', 
+                })
+                @@include('../partials/_team-item.html', {
+                    'imgPath': '2', 
+                    'name': 'Savannah Nguyen', 
+                    'designation': 'Manager of Sales', 
+                })
+                @@include('../partials/_team-item.html', {
+                    'imgPath': '3', 
+                    'name': 'Bessie Cooper', 
+                    'designation': 'Director of Sales', 
+                })
+            </div>
+        </div>
+    </section>
+    <!-- ========================= Team Section End ============================= -->
+
+    <!-- ==================== Blog Start Here ==================== -->
+    <section class="blog padding-y-120 bg-white">
+        <div class="container container-two">
+
+            <div class="section-heading">
+                <div class="section-heading__inner">
+                    <span class="section-heading__subtitle bg-white"> 
+                        <span class="text-gradient fw-semibold ">Latest blog and news</span>
+                    </span>
+                    <h2 class="section-heading__title">Investing in estate made lot easy</h2>
+                </div>
+            </div>
+
+            <div class="row gy-4">
+
+                @@include('../partials/_blog-four-item.html', {
+                    'title': 'Your journey to home ownership starts here', 
+                    'date': '04 Feb', 
+                    'imgPath': '1'
+                })
+                @@include('../partials/_blog-four-item.html', {
+                    'title': 'Your journey home owner ship starts here', 
+                    'date': '08 Feb', 
+                    'imgPath': '2'
+                })
+                @@include('../partials/_blog-four-item.html', {
+                    'title': 'Investment and Opportunity in Real Estate', 
+                    'date': '12 Feb', 
+                    'imgPath': '3'
+                })
+
+            </div>
+        </div>
+    </section>
+    <!-- ==================== Blog End Here ==================== -->
+    
+    <!-- ============================= CTA section Start ===================== -->
+    <section class="cta padding-b-120 bg-white">
+        <div class="container container-two">
+            <div class="cta-box flx-between gap-2">
+                <div class="cta-content">
+                    <h2 class="cta-content__title">Subscribe To Our <span class="text-gradient">Newsletter</span> </h2>
+                    <p class="cta-content__desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <form action="#" class="cta-content__form d-flex align-items-center gap-2">
+                        <div class="position-relative w-100">
+                            <input type="text" class="common-input common-input--withLeftIcon w-100" placeholder="Enter Your Email Address">
+                            <span class="input-icon input-icon--left text-gradient font-20 line-height-1"><i class="far fa-envelope"></i></span>
+                        </div>
+                        <button type="submit" class="btn btn-main text-uppercase flex-shrink-0"> Subscribe <span class="text">Now</span> </button>
+                    </form>
+                </div>
+                <div class="cta-content__thumb d-xl-block d-none">
+                    <img src="assets/images/thumbs/cta-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================= CTA section End ===================== -->
+    
+    @@include('../partials/_footer.html', {
+        'bgDarkClass': ''
+    })
+</main>
+
+@@include('../partials/_template-bottom.html')
+
+
