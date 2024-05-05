@@ -75,6 +75,7 @@
             z-index: -1;
             background: var(--main-gradient);
             transition: 0.2s linear;
+            border-radius: inherit;
         }
         &::after {
             background: var(--main-gradient-rev);
