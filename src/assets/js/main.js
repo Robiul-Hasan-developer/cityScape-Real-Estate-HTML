@@ -398,18 +398,21 @@
   // ========================== Social List Visibility Js End =====================
   
   // ========================== Text Slide Js Start =====================
-  $('.service-slider').marquee({
-    pauseOnHover: true,
-    
-    allowCss3Support: true,
-    css3easing: 'linear',
-    easing: 'linear',
-    delayBeforeStart: 1000,
-    duration: 7000,
-    gap: 20,
-    pauseOnCycle: false,
-    startVisible: false, 
-  });
+  if ($(".service-slider").length > 0) { 
+    $('.service-slider').marquee({
+      pauseOnHover: true,
+      duplicated: true,
+      allowCss3Support: true,
+      css3easing: 'linear',
+      easing: 'linear',
+      delayBeforeStart: 0,
+      duration: 14000,
+      direction: $('html').attr('dir') === 'rtl' ? 'right' : 'left',
+      gap: 32,
+      pauseOnCycle: false,
+      startVisible: true, 
+    });
+  }
   // ========================== Text Slide Js End =====================
 
   // ========================== Image Uploader Js Start =====================

@@ -7332,20 +7332,20 @@ button.slick-next {
 
 /* ======================= About five Css End ========================= */
 /* ======================= Service Slider Section Css Start ======================= */
-.service-slider {
+.service-slider-section {
     border: 1px solid var(--gray-800);
     padding: 40px;
     border-right: 0;
     border-left: 0;
 }
 
-.service-slider .js-marquee {
+.service-slider-section .js-marquee {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.service-slider__item {
+.service-slider-section__item {
     min-width: max-content;
 }
 
